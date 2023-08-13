@@ -1,0 +1,42 @@
+.card-bg-1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.card-bg-2 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(348deg, rgba(2, 0, 36, 1) 0%, rgba(68, 40, 96, 1) 0%, rgba(0, 155, 255, 1) 100%);
+}
+
+.fade-in-fwd {
+    -webkit-animation: fade-in-fwd 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
